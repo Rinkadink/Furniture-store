@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: calc(100vw - 100px);
+  margin: 0 auto;
+  max-width: 1800px;
+}
+.home {
+  background: #fbebb5;
+}
+.heroSubSec {
+  background: #faf4f4;
+}
+.homeSocial {
+  background: url(../../public/images/instagram-bg.png);
+}
+.homeSocialBtn {
+  border-radius: 50px;
+  background: #faf4f4;
+  width: 255px;
+  height: 64px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.heroProps {
+  background: url(../../public/images/fur-bg.png) no-repeat;
+  background-size: cover;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 400px) {
+  body {
+    width: calc(100vw - 20px);
+  }
+}
